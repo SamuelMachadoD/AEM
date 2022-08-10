@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Bundle-Category: React App
+Bundle-Description: Core bundle for React App
+Bundle-ManifestVersion: 2
+Bundle-Name: React App - Core
+Bundle-SymbolicName: reactapp.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.reactapp.core.filters;version="1.0";uses:="javax.s
+ ervlet",com.reactapp.core.listeners;version="1.0";uses:="org.apache.s
+ ling.api.resource.observation",com.reactapp.core.models;version="1.0"
+ ;uses:="com.adobe.cq.export.json,com.fasterxml.jackson.annotation,jav
+ ax.annotation,org.apache.sling.api,org.apache.sling.api.resource,org.
+ apache.sling.models.annotations,org.apache.sling.models.annotations.i
+ njectorspecific",com.reactapp.core.schedulers;version="1.0",com.react
+ app.core.servlets;version="1.0";uses:="javax.servlet,org.apache.sling
+ .api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.cq.export.j
+ son;version="[2.0,3)",com.day.cq.wcm.api;version="[1.29,2)",com.faste
+ rxml.jackson.annotation;version="[2.13,3)",com.reactapp.core.filters;
+ version="[1.0,2)",com.reactapp.core.listeners;version="[1.0,2)",com.r
+ eactapp.core.models;version="[1.0,2)",com.reactapp.core.schedulers;ve
+ rsion="[1.0,2)",com.reactapp.core.servlets;version="[1.0,2)",javax.se
+ rvlet;version="[3.1,4)",org.apache.sling.api;version="[2.3,3)",org.ap
+ ache.sling.api.request;version="[2.5,3)",org.apache.sling.api.resourc
+ e;version="[2.13,3)",org.apache.sling.api.resource.observation;versio
+ n="[1.2,2)",org.apache.sling.api.servlets;version="[2.3,3)",org.apach
+ e.sling.models.annotations;version="[1.5,2)",org.apache.sling.models.
+ annotations.injectorspecific;version="[1.1,2)",org.slf4j;version="[1.
+ 7,2)"
+Private-Package: com.reactapp.core.models.impl
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.reactapp.core.filters.LoggingFilter.xm
+ l,OSGI-INF/com.reactapp.core.listeners.SimpleResourceListener.xml,OSG
+ I-INF/com.reactapp.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/c
+ om.reactapp.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.reactapp.core.models.HelloWorldModel,com.reac
+ tapp.core.models.XxXxx,com.reactapp.core.models.impl.MeuComponenteImp
+ l
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>React App - UI content</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="acHandling">merge</entry>
+<entry key="dependencies-locations">com.reactapp:reactapp.ui.apps:1.0.0-SNAPSHOT=maven:com.reactapp:reactapp.ui.apps:1.0.0-SNAPSHOT:zip</entry>
+<entry key="created">2022-08-10T18:35:13.299Z</entry>
+<entry key="groupId">com.reactapp</entry>
+<entry key="description">UI content package for React App</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">content</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="dependencies">com.reactapp:reactapp.ui.apps:1.0.0-SNAPSHOT</entry>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="name">reactapp.ui.content</entry>
+<entry key="artifactId">reactapp.ui.content</entry>
+<entry key="group">com.reactapp</entry>
+</properties>

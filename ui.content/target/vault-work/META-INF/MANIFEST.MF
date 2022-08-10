@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: React App - UI content
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.reactapp:reactapp.ui.content:1.0.0-SNAPSHOT
+Content-Package-Description: UI content package for React App
+Content-Package-Dependencies: com.reactapp:reactapp.ui.apps:1.0.0-SNAPSH
+ OT
+Content-Package-Dependencies-Locations: com.reactapp:reactapp.ui.apps:1.
+ 0.0-SNAPSHOT=maven:com.reactapp:reactapp.ui.apps:1.0.0-SNAPSHOT:zip
+Content-Package-Roots: /conf/reactapp,/content/dam/reactapp/asset.jpg,/c
+ ontent/experience-fragments/reactapp,/content/reactapp
+

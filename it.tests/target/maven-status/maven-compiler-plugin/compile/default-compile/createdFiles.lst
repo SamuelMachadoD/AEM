@@ -1,0 +1,4 @@
+com\reactapp\it\tests\CreatePageIT.class
+com\reactapp\it\tests\HtmlUnitClient.class
+com\reactapp\it\tests\GetPageIT.class
+com\reactapp\it\tests\PublishPageValidationIT.class
