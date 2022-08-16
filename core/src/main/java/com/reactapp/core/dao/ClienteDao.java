@@ -9,6 +9,6 @@ public interface ClienteDao {
     void saveClient(Cliente cliente) throws SQLException;
 
     void delClient(int id);
-    void alteraClient(int id, String oldNome, String newNome);
+    void alteraClient(int id, String newNome);
     void verificaNotaFiscal(int id);
 }

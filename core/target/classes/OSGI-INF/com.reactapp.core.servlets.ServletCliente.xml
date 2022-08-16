@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.reactapp.core.servlets.ServletCliente" immediate="true">
+  <property name="service.description" type="String" value="Servlet Client"/>
+  <property name="sling.servlet.methods" type="String">GET
+POST
+DELETE
+PUT</property>
+  <property name="sling.servlet.paths" type="String" value="/bin/client"/>
+  <property name="sling.servlet.extensions" type="String">txt
+json</property>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="clienteDao" interface="com.reactapp.core.dao.ClienteDao" field="clienteDao"/>
+  <reference name="serviceClient" interface="com.reactapp.core.service.ServiceClient" field="serviceClient"/>
+  <implementation class="com.reactapp.core.servlets.ServletCliente"/>
+</scr:component>

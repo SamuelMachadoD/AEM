@@ -1,5 +1,5 @@
 #File edited by the Apache Sling Content Package to Sling Feature converter
-#Mon Aug 15 20:06:54 BRT 2022
+#Tue Aug 16 10:44:01 BRT 2022
 author=reactapp.all-author.json
 publish=reactapp.all-publish.json
 (default)=reactapp.all.json

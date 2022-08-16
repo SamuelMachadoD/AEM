@@ -1,9 +1,11 @@
 package com.reactapp.core.service;
+
 import com.day.commons.datasource.poolservice.DataSourcePool;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 
@@ -16,7 +18,7 @@ public class DatabaseServiceImpl implements DatabaseService {
     public Connection getConnection() {
         Connection connection = null;
         try {
-            DataSource dataSource = (DataSource) dataSourcePool.getDataSource("aem_datasource");
+            DataSource dataSource = (DataSource) dataSourcePool.getDataSource("aem_database");
             connection = dataSource.getConnection();
             logger.debug("Connection obtained");
         }

@@ -11,10 +11,10 @@ A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\Produto.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\ServiceTest.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\package-info.java
-A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\Servlet_Cliente.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\XxXxx.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\listeners\SimpleResourceListener.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\DatabaseService.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\ServiceClient.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\dao\ClienteDao.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\dao\ProdutoDaoImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\filters\package-info.java
@@ -22,4 +22,7 @@ A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\impl\MeuComponenteImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\package-info.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\filters\LoggingFilter.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\NotaFiscal.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\ServiceClientImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\SimpleServlet.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\ServletCliente.java
