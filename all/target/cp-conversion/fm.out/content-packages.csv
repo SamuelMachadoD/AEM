@@ -1,4 +1,4 @@
-# File created on Wed Aug 10 15:35:15 BRT 2022 by the Apache Sling Content Package to Sling Feature converter
+# File created on Mon Aug 15 20:06:48 BRT 2022 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 A:\Workspace\aem.react.basic-master\all\target\reactapp.all-1.0.0-SNAPSHOT.zip,com.reactapp:reactapp.all:1.0.0-SNAPSHOT,CONTAINER,,,
 A:\Workspace\aem.react.basic-master\all\target\reactapp.all-1.0.0-SNAPSHOT.zip,adobe/consulting:acs-aem-commons-ui.apps:5.2.0,APPLICATION,com.reactapp:reactapp.all:1.0.0-SNAPSHOT,/jcr_root/apps/reactapp-vendor-packages/application/install/acs-aem-commons-ui.apps-5.2.0-min.zip,A:\Workspace\aem.react.basic-master\all\target\reactapp.all-1.0.0-SNAPSHOT.zip!/jcr_root/apps/reactapp-vendor-packages/application/install/acs-aem-commons-ui.apps-5.2.0-min.zip

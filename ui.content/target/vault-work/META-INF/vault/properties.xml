@@ -5,7 +5,7 @@
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="acHandling">merge</entry>
 <entry key="dependencies-locations">com.reactapp:reactapp.ui.apps:1.0.0-SNAPSHOT=maven:com.reactapp:reactapp.ui.apps:1.0.0-SNAPSHOT:zip</entry>
-<entry key="created">2022-08-10T18:35:13.299Z</entry>
+<entry key="created">2022-08-15T23:06:45.166Z</entry>
 <entry key="groupId">com.reactapp</entry>
 <entry key="description">UI content package for React App</entry>
 <entry key="version">1.0.0-SNAPSHOT</entry>

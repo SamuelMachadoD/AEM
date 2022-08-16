@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AEM" type="JarApplication" singleton="false">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/../../AEM/aem-sdk/author/aem-author-p4502.jar" />
+    <option name="WORKING_DIRECTORY" value="A:\Workspace\aem.react.basic-master" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2" />
+  </configuration>
+</component>

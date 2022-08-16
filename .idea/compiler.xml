@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="reactapp.all" />
+        <module name="reactapp.ui.apps" />
+        <module name="reactapp.ui.content" />
+        <module name="reactapp.ui.config" />
+        <module name="reactapp.it.tests" />
+        <module name="reactapp.core" />
+        <module name="reactapp.ui.apps.structure" />
+        <module name="reactapp.ui.tests" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
