@@ -19,6 +19,7 @@ import com.reactapp.core.service.ServiceProduct;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.propertytypes.ServiceDescription;
@@ -49,6 +50,11 @@ public class ServletProdutos extends SlingAllMethodsServlet{
 
     @Reference
     private ServiceProduct Service;
+
+    @Activate
+    public ServletProdutos(ServiceProduct Service) {
+        this.Service = Service;
+    }
 
     @Override
     protected void doPost(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
