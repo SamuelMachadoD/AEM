@@ -1,7 +1,6 @@
 A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\schedulers\SimpleScheduledTaskTest.java
 A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\testcontext\AppAemContext.java
 A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\filters\LoggingFilterTest.java
-A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\service\ServiceProductImplTest.java
 A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\listeners\SimpleResourceListenerTest.java
 A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\models\HelloWorldModelTest.java
 A:\Workspace\aem.react.basic-master\core\src\test\java\com\reactapp\core\servlets\SimpleServletTest.java

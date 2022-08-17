@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.reactapp.core.filters.LoggingFilterTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.111 s - in com.reactapp.core.filters.LoggingFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.393 s - in com.reactapp.core.filters.LoggingFilterTest
