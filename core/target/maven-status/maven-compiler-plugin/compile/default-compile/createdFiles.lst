@@ -13,11 +13,13 @@ com\reactapp\core\models\impl\MeuComponenteImpl.class
 com\reactapp\core\models\Mensagem.class
 com\reactapp\core\models\HelloWorldModel.class
 com\reactapp\core\servlets\ServletProdutos.class
+com\reactapp\core\dao\NotaDao.class
 com\reactapp\core\service\JsonConverter.class
 com\reactapp\core\service\ServiceProduct.class
 com\reactapp\core\models\Cliente.class
 com\reactapp\core\filters\package-info.class
 com\reactapp\core\schedulers\package-info.class
+com\reactapp\core\dao\NotaDaoImpl.class
 com\reactapp\core\dao\ProdutoDao.class
 com\reactapp\core\dao\ProdutoDaoImpl.class
 com\reactapp\core\service\DatabaseService.class

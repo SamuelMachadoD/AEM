@@ -10,5 +10,4 @@ public interface ClienteDao {
 
     void delClient(int id);
     void alteraClient(int id, String newNome);
-    void verificaNotaFiscal(int id);
 }

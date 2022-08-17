@@ -40,7 +40,7 @@ public class ProdutoDaoImpl implements ProdutoDao{
     @Override
     public void delProduct(int id) {
         try(Connection connection = databaseService.getConnection()) {
-            String sql = "DELETE FROM produto WHERE id=(?)";
+            String sql = "delete from produto WHERE id=?";
 
             try(PreparedStatement ps = connection.prepareStatement(sql)) {
                 ps.setInt(1, id);

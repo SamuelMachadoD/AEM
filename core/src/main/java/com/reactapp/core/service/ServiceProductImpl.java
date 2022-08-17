@@ -61,7 +61,7 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
             getJsonParameter(request, response);
             Dao.delProduct(id);
         }catch(Exception e){
-            getMsg(response,"Erro no banco de dados");
+            getMsg(response, e.getMessage());
         }
     }
 

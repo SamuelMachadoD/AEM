@@ -2,7 +2,10 @@ package com.reactapp.core.service;
 
 import com.google.gson.Gson;
 import com.reactapp.core.dao.ClienteDao;
+import com.reactapp.core.dao.NotaDao;
 import com.reactapp.core.models.Cliente;
+import com.reactapp.core.models.NotaFiscal;
+import com.reactapp.core.models.Produto;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.tika.io.IOUtils;
@@ -11,11 +14,16 @@ import org.osgi.service.component.annotations.Reference;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 @Component(immediate = true, service = ServiceClient.class)
 public class ServiceClientImpl implements ServiceClient, JsonConverter {
     @Reference
     private ClienteDao clienteDao;
+
+    @Reference
+    private NotaDao notaDao;
+
     Cliente conversor = new Cliente();
     int id = 0;
 
@@ -29,8 +37,21 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
     }
 
     @Override
-    public void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
-    //consulta pela nota
+    public void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
+        try {
+            getJsonParameter(request, response);
+            if(notaDao.getNotaID(id) != null){
+                List<NotaFiscal> notas = notaDao.getNotaID(id);
+                String todasNotas = new Gson().toJson(notas);
+                try{
+                    response.getWriter().write(todasNotas);
+                }catch (IOException e){
+                    throw new RuntimeException(e);
+                }
+            }
+        }catch(Exception e){
+            getMsg(response,"Erro no banco de dados");
+        }
     }
 
     @Override

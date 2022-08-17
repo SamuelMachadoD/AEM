@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public interface ServiceClient {
     void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws SQLException, IOException;
 
-    void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response);
+    void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException;
 
     void doDelete(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException;
 

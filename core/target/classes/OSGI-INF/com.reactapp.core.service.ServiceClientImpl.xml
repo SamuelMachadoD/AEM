@@ -4,5 +4,6 @@
     <provide interface="com.reactapp.core.service.ServiceClient"/>
   </service>
   <reference name="clienteDao" interface="com.reactapp.core.dao.ClienteDao" field="clienteDao"/>
+  <reference name="notaDao" interface="com.reactapp.core.dao.NotaDao" field="notaDao"/>
   <implementation class="com.reactapp.core.service.ServiceClientImpl"/>
 </scr:component>

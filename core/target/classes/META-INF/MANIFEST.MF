@@ -32,39 +32,42 @@ Private-Package: com.reactapp.core.dao,com.reactapp.core.models.impl,c
  om.reactapp.core.service
 Provide-Capability: osgi.service;objectClass:List<String>="com.reactap
  p.core.dao.ClienteDao";uses:="com.reactapp.core.dao",osgi.service;obj
- ectClass:List<String>="com.reactapp.core.dao.ProdutoDao";uses:="com.r
- eactapp.core.dao",osgi.service;objectClass:List<String>="com.reactapp
- .core.service.DatabaseService";uses:="com.reactapp.core.service",osgi
- .service;objectClass:List<String>="com.reactapp.core.service.ServiceC
- lient";uses:="com.reactapp.core.service",osgi.service;objectClass:Lis
- t<String>="com.reactapp.core.service.ServiceProduct";uses:="com.react
- app.core.service",osgi.service;objectClass:List<String>="java.lang.Ru
- nnable",osgi.service;objectClass:List<String>="javax.servlet.Filter";
- uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.se
- rvlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<St
- ring>="org.apache.sling.api.resource.observation.ResourceChangeListen
- er";uses:="org.apache.sling.api.resource.observation"
+ ectClass:List<String>="com.reactapp.core.dao.NotaDao";uses:="com.reac
+ tapp.core.dao",osgi.service;objectClass:List<String>="com.reactapp.co
+ re.dao.ProdutoDao";uses:="com.reactapp.core.dao",osgi.service;objectC
+ lass:List<String>="com.reactapp.core.service.DatabaseService";uses:="
+ com.reactapp.core.service",osgi.service;objectClass:List<String>="com
+ .reactapp.core.service.ServiceClient";uses:="com.reactapp.core.servic
+ e",osgi.service;objectClass:List<String>="com.reactapp.core.service.S
+ erviceProduct";uses:="com.reactapp.core.service",osgi.service;objectC
+ lass:List<String>="java.lang.Runnable",osgi.service;objectClass:List<
+ String>="javax.servlet.Filter";uses:="javax.servlet",osgi.service;obj
+ ectClass:List<String>="javax.servlet.Servlet";uses:="javax.servlet",o
+ sgi.service;objectClass:List<String>="org.apache.sling.api.resource.o
+ bservation.ResourceChangeListener";uses:="org.apache.sling.api.resour
+ ce.observation"
 Require-Capability: osgi.service;filter:="(objectClass=com.day.commons
  .datasource.poolservice.DataSourcePool)";effective:=active,osgi.servi
  ce;filter:="(objectClass=com.reactapp.core.dao.ClienteDao)";effective
- :=active,osgi.service;filter:="(objectClass=com.reactapp.core.dao.Pro
- dutoDao)";effective:=active,osgi.service;filter:="(objectClass=com.re
- actapp.core.service.DatabaseService)";effective:=active,osgi.service;
- filter:="(objectClass=com.reactapp.core.service.ServiceClient)";effec
- tive:=active,osgi.service;filter:="(objectClass=com.reactapp.core.ser
- vice.ServiceProduct)";effective:=active,osgi.extender;filter:="(&(osg
- i.extender=osgi.component)(version>=1.4.0)(!(version>=2.0.0)))",osgi.
- ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+ :=active,osgi.service;filter:="(objectClass=com.reactapp.core.dao.Not
+ aDao)";effective:=active,osgi.service;filter:="(objectClass=com.react
+ app.core.dao.ProdutoDao)";effective:=active,osgi.service;filter:="(ob
+ jectClass=com.reactapp.core.service.DatabaseService)";effective:=acti
+ ve,osgi.service;filter:="(objectClass=com.reactapp.core.service.Servi
+ ceClient)";effective:=active,osgi.service;filter:="(objectClass=com.r
+ eactapp.core.service.ServiceProduct)";effective:=active,osgi.extender
+ ;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(version>
+ =2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Service-Component: OSGI-INF/com.reactapp.core.dao.ClienteDaoImpl.xml,O
- SGI-INF/com.reactapp.core.dao.ProdutoDaoImpl.xml,OSGI-INF/com.reactap
- p.core.filters.LoggingFilter.xml,OSGI-INF/com.reactapp.core.listeners
- .SimpleResourceListener.xml,OSGI-INF/com.reactapp.core.schedulers.Sim
- pleScheduledTask.xml,OSGI-INF/com.reactapp.core.service.DatabaseServi
- ceImpl.xml,OSGI-INF/com.reactapp.core.service.ServiceClientImpl.xml,O
- SGI-INF/com.reactapp.core.service.ServiceProductImpl.xml,OSGI-INF/com
- .reactapp.core.servlets.ServletCliente.xml,OSGI-INF/com.reactapp.core
- .servlets.ServletProdutos.xml,OSGI-INF/com.reactapp.core.servlets.Sim
- pleServlet.xml
+ SGI-INF/com.reactapp.core.dao.NotaDaoImpl.xml,OSGI-INF/com.reactapp.c
+ ore.dao.ProdutoDaoImpl.xml,OSGI-INF/com.reactapp.core.filters.Logging
+ Filter.xml,OSGI-INF/com.reactapp.core.listeners.SimpleResourceListene
+ r.xml,OSGI-INF/com.reactapp.core.schedulers.SimpleScheduledTask.xml,O
+ SGI-INF/com.reactapp.core.service.DatabaseServiceImpl.xml,OSGI-INF/co
+ m.reactapp.core.service.ServiceClientImpl.xml,OSGI-INF/com.reactapp.c
+ ore.service.ServiceProductImpl.xml,OSGI-INF/com.reactapp.core.servlet
+ s.ServletCliente.xml,OSGI-INF/com.reactapp.core.servlets.ServletProdu
+ tos.xml,OSGI-INF/com.reactapp.core.servlets.SimpleServlet.xml
 Sling-Model-Classes: com.reactapp.core.models.HelloWorldModel,com.reac
  tapp.core.models.XxXxx,com.reactapp.core.models.impl.MeuComponenteImp
  l

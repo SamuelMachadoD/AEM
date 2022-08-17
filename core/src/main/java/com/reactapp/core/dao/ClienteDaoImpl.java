@@ -67,8 +67,4 @@ public class ClienteDaoImpl implements ClienteDao{
         }
     }
 
-    @Override
-    public void verificaNotaFiscal(int id) {
-
-    }
 }
