@@ -9,5 +9,4 @@ public interface JsonConverter {
     void getJsonObj(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException;
     void getJsonParameter(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException;
 
-    void getMsg(SlingHttpServletResponse response, String msg) throws IOException;
 }

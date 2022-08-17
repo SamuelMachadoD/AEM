@@ -2,7 +2,6 @@ package com.reactapp.core.service;
 
 import com.google.gson.Gson;
 import com.reactapp.core.dao.ProdutoDao;
-import com.reactapp.core.models.Mensagem;
 import com.reactapp.core.models.Produto;
 import com.reactapp.core.models.ProdutoDTO;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -28,7 +27,7 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
             getJsonObj(request, response);
             Dao.saveProduct(conversor);
         } catch (SQLException | IOException e) {
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
     }
 
@@ -50,7 +49,7 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
                 }
             }
         }catch(Exception e){
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
 
     }
@@ -61,7 +60,7 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
             getJsonParameter(request, response);
             Dao.delProduct(id);
         }catch(Exception e){
-            getMsg(response, e.getMessage());
+            response.getWriter().write("{\"Mensagem\": \"" + e.getMessage() + "\"}");
         }
     }
 
@@ -72,7 +71,7 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
             getJsonObj(request, response);
             Dao.alteraProduct(id, conversor);
         }catch(Exception e){
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
     }
 
@@ -89,13 +88,13 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
         try {
             userPostString = IOUtils.toString(request.getReader());
         } catch (IOException e) {
-            getMsg(response,e.getMessage());
+            response.getWriter().write("{\"Mensagem\": \"" + e.getMessage() + "\"}");
         }
         try {
             conversor = new Gson().fromJson(userPostString, Produto.class);
         } catch (Exception e) {
             try {
-                getMsg(response,"Json invalido");
+                response.getWriter().write("{\"Mensagem\": \"" + ("Json Invalido") + "\"}");
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
@@ -109,12 +108,8 @@ public class ServiceProductImpl implements ServiceProduct, JsonConverter{
             String idString = request.getParameter("id");
             id = Integer.parseInt(idString);
         }catch (Exception e){
-            getMsg(response,"Parametro Nulo");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Parametro Nulo") + "\"}");
         }
     }
 
-    @Override
-    public void getMsg(SlingHttpServletResponse response, String msg) throws IOException {
-        response.getWriter().write(new Gson().toJson(msg));
-    }
 }

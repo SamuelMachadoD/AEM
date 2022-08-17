@@ -5,7 +5,6 @@ import com.reactapp.core.dao.ClienteDao;
 import com.reactapp.core.dao.NotaDao;
 import com.reactapp.core.models.Cliente;
 import com.reactapp.core.models.NotaFiscal;
-import com.reactapp.core.models.Produto;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.tika.io.IOUtils;
@@ -32,7 +31,7 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
             getJsonObj(request, response);
             clienteDao.saveClient(conversor);
         } catch (SQLException e) {
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
     }
 
@@ -50,7 +49,7 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
                 }
             }
         }catch(Exception e){
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
     }
 
@@ -60,7 +59,7 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
             getJsonParameter(request, response);
             clienteDao.delClient(id);
         }catch(Exception e){
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
     }
 
@@ -72,7 +71,7 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
             getJsonObj(request, response);
             clienteDao.alteraClient(id, conversor.getNome());
         }catch(Exception e){
-            getMsg(response,"Erro no banco de dados");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");
         }
     }
 
@@ -82,13 +81,13 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
         try {
             userPostString = IOUtils.toString(request.getReader());
         } catch (IOException e) {
-            getMsg(response,e.getMessage());
+            response.getWriter().write("{\"Mensagem\": \"" + e.getMessage() + "\"}");
         }
         try {
             conversor = new Gson().fromJson(userPostString, Cliente.class);
         } catch (Exception e) {
             try {
-                getMsg(response,"Json invalido");
+                response.getWriter().write("{\"Mensagem\": \"" + ("Json invalido") + "\"}");
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
@@ -102,12 +101,8 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
             String idString = request.getParameter("id");
             id = Integer.parseInt(idString);
         }catch (Exception e){
-            getMsg(response,"Parametro Nulo");
+            response.getWriter().write("{\"Mensagem\": \"" + ("Parametro Nulo") + "\"}");
         }
     }
 
-    @Override
-    public void getMsg(SlingHttpServletResponse response, String msg) throws IOException {
-        response.getWriter().write(new Gson().toJson(msg));
-    }
 }
