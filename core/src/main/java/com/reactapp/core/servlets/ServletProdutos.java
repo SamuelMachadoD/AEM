@@ -51,6 +51,9 @@ public class ServletProdutos extends SlingAllMethodsServlet{
     @Reference
     private ServiceProduct Service;
 
+    public ServletProdutos(ServiceProduct serviceProduct) {
+    }
+
     @Override
     protected void doPost(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
         Service.doPost(request, response);

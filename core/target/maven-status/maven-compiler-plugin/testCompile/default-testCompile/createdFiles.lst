@@ -4,4 +4,5 @@ com\reactapp\core\listeners\SimpleResourceListenerTest.class
 com\reactapp\core\testcontext\AppAemContext$1.class
 com\reactapp\core\servlets\SimpleServletTest.class
 com\reactapp\core\schedulers\SimpleScheduledTaskTest.class
+com\reactapp\core\service\ServiceProductImplTest.class
 com\reactapp\core\filters\LoggingFilterTest.class
