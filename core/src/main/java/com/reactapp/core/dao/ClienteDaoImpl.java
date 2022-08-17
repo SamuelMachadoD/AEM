@@ -25,7 +25,7 @@ public class ClienteDaoImpl implements ClienteDao{
                 ps.execute();
 
             }catch (Exception e){
-                throw new RuntimeException(e.getMessage()+"Error while saving word");
+                throw new RuntimeException(e.getMessage()+"Error while saving client");
             }
         }catch (SQLException e){
             throw new RuntimeException(e.getMessage()+"Error while trying to connect to database");

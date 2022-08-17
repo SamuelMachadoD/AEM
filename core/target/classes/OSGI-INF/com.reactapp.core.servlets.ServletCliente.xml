@@ -11,7 +11,6 @@ json</property>
   <service>
     <provide interface="javax.servlet.Servlet"/>
   </service>
-  <reference name="clienteDao" interface="com.reactapp.core.dao.ClienteDao" field="clienteDao"/>
-  <reference name="serviceClient" interface="com.reactapp.core.service.ServiceClient" field="serviceClient"/>
+  <reference name="Service" interface="com.reactapp.core.service.ServiceClient" field="Service"/>
   <implementation class="com.reactapp.core.servlets.ServletCliente"/>
 </scr:component>

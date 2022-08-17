@@ -15,7 +15,7 @@
  */
 package com.reactapp.core.servlets;
 
-import com.reactapp.core.service.ServiceTest;
+import com.reactapp.core.service.ServiceProduct;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
@@ -40,31 +40,34 @@ import static org.apache.sling.api.servlets.ServletResolverConstants.*;
         SLING_SERVLET_METHODS + "=" + "POST",
         SLING_SERVLET_METHODS + "=" + "DELETE",
         SLING_SERVLET_METHODS + "=" + "PUT",
-        SLING_SERVLET_PATHS + "=" + "/bin/produtos",
+        SLING_SERVLET_PATHS + "=" + "/bin/product",
         SLING_SERVLET_EXTENSIONS + "=" + "txt", SLING_SERVLET_EXTENSIONS + "=" + "json"})
 
 @ServiceDescription("Servlet Produtos")
-public class Servlet_Produtos extends SlingAllMethodsServlet{
+public class ServletProdutos extends SlingAllMethodsServlet{
     private static final long serialVersionUID = 1l;
-    private ServiceTest ServiceTest;
+
+    @Reference
+    private ServiceProduct Service;
 
     @Override
     protected void doPost(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        ServiceTest.doPost(request, response);
+        Service.doPost(request, response);
     }
 
     @Override
     protected void doGet(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        ServiceTest.doGet(request, response);
+        Service.doGet(request, response);
+
     }
 
     @Override
     protected void doDelete(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        ServiceTest.doGet(request, response);
+        Service.doDelete(request, response);
     }
 
     @Override
     protected void doPut(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        ServiceTest.doGet(request, response);
+        Service.doPut(request, response);
     }
 }

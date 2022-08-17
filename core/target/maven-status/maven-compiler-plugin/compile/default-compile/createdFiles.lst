@@ -4,13 +4,17 @@ com\reactapp\core\models\NotaFiscal.class
 com\reactapp\core\models\package-info.class
 com\reactapp\core\service\ServiceClient.class
 com\reactapp\core\dao\ClienteDao.class
-com\reactapp\core\service\ServiceTest.class
 com\reactapp\core\schedulers\SimpleScheduledTask$Config.class
 com\reactapp\core\models\MeuComponente.class
-com\reactapp\core\service\ServiceTestImpl.class
+com\reactapp\core\service\ServiceProductImpl.class
 com\reactapp\core\schedulers\SimpleScheduledTask.class
+com\reactapp\core\models\ProdutoDTO.class
 com\reactapp\core\models\impl\MeuComponenteImpl.class
+com\reactapp\core\models\Mensagem.class
 com\reactapp\core\models\HelloWorldModel.class
+com\reactapp\core\servlets\ServletProdutos.class
+com\reactapp\core\service\JsonConverter.class
+com\reactapp\core\service\ServiceProduct.class
 com\reactapp\core\models\Cliente.class
 com\reactapp\core\filters\package-info.class
 com\reactapp\core\schedulers\package-info.class
@@ -24,6 +28,5 @@ com\reactapp\core\servlets\package-info.class
 com\reactapp\core\servlets\ServletCliente.class
 com\reactapp\core\servlets\SimpleServlet.class
 com\reactapp\core\models\XxXxx.class
-com\reactapp\core\servlets\Servlet_Produtos.class
 com\reactapp\core\models\Produto.class
 com\reactapp\core\service\DatabaseServiceImpl.class

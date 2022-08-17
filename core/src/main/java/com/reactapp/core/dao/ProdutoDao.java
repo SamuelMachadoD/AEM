@@ -9,7 +9,7 @@ public interface ProdutoDao {
 
     void saveProduct(Produto produto) throws SQLException;
     void delProduct(int id);
-    void alteraProduct(int id, String oldNome, String newNome);
+    void alteraProduct(int id, Produto produto);
     List<Produto> listaProduto();
     Produto listaProdutoID(int id);
 }

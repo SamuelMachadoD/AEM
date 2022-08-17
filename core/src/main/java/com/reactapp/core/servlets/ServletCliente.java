@@ -49,14 +49,12 @@ import static org.apache.sling.api.servlets.ServletResolverConstants.*;
 public class ServletCliente extends SlingAllMethodsServlet{
     private static final long serialVersionUID = 1l;
     @Reference
-    private ServiceClient serviceClient;
-    @Reference
-    private ClienteDao clienteDao;
+    private ServiceClient Service;
 
     @Override
     protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
         try {
-            serviceClient.doPost(request, response);
+            Service.doPost(request, response);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -64,16 +62,16 @@ public class ServletCliente extends SlingAllMethodsServlet{
 
     @Override
     protected void doGet(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        //serviceClient.doGet(request, response);
+        Service.doGet(request, response);
     }
 
     @Override
     protected void doDelete(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        serviceClient.doDelete(request, response);
+        Service.doDelete(request, response);
     }
 
     @Override
     protected void doPut(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
-        serviceClient.doPut(request, response);
+        Service.doPut(request, response);
     }
 }

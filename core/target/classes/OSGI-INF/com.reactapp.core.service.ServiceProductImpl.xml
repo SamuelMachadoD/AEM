@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.reactapp.core.service.ServiceProductImpl" immediate="true">
+  <service>
+    <provide interface="com.reactapp.core.service.ServiceProduct"/>
+  </service>
+  <reference name="Dao" interface="com.reactapp.core.dao.ProdutoDao" field="Dao"/>
+  <implementation class="com.reactapp.core.service.ServiceProductImpl"/>
+</scr:component>
