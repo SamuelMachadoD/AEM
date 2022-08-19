@@ -4,6 +4,8 @@ com\reactapp\core\models\NotaFiscal.class
 com\reactapp\core\models\package-info.class
 com\reactapp\core\service\ServiceClient.class
 com\reactapp\core\dao\ClienteDao.class
+com\reactapp\core\service\RelatorioServiceImpl.class
+com\reactapp\core\service\RelatorioService.class
 com\reactapp\core\schedulers\SimpleScheduledTask$Config.class
 com\reactapp\core\models\MeuComponente.class
 com\reactapp\core\service\ServiceProductImpl.class
@@ -28,6 +30,8 @@ com\reactapp\core\dao\ClienteDaoImpl.class
 com\reactapp\core\service\ServiceClientImpl.class
 com\reactapp\core\servlets\package-info.class
 com\reactapp\core\servlets\ServletCliente.class
+com\reactapp\core\servlets\ServletRelatorio.class
+com\reactapp\core\filters\MessageFilter.class
 com\reactapp\core\servlets\SimpleServlet.class
 com\reactapp\core\models\XxXxx.class
 com\reactapp\core\models\Produto.class

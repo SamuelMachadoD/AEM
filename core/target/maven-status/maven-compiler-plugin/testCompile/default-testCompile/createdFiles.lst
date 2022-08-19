@@ -1,3 +1,4 @@
+com\reactapp\core\dao\ProdutoDaoTest.class
 com\reactapp\core\testcontext\AppAemContext.class
 com\reactapp\core\models\HelloWorldModelTest.class
 com\reactapp\core\listeners\SimpleResourceListenerTest.class

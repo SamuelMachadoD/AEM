@@ -42,11 +42,11 @@ public class ServiceClientImpl implements ServiceClient, JsonConverter {
             if(notaDao.getNotaID(id) != null){
                 List<NotaFiscal> notas = notaDao.getNotaID(id);
                 String todasNotas = new Gson().toJson(notas);
-                try{
-                    response.getWriter().write(todasNotas);
-                }catch (IOException e){
-                    throw new RuntimeException(e);
-                }
+                    try {
+                        response.getWriter().write(todasNotas);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
             }
         }catch(Exception e){
             response.getWriter().write("{\"Mensagem\": \"" + ("Erro no banco de dados") + "\"}");

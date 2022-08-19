@@ -2,6 +2,7 @@ A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\dao\Not
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\DatabaseServiceImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\listeners\package-info.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\ServiceProductImpl.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\ServletRelatorio.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\ProdutoDTO.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\schedulers\package-info.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\ServletProdutos.java
@@ -9,7 +10,9 @@ A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\dao\ClienteDaoImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\HelloWorldModel.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\dao\ProdutoDao.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\RelatorioService.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\schedulers\SimpleScheduledTask.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\RelatorioServiceImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\MeuComponente.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\ServiceProduct.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\Produto.java
@@ -27,6 +30,7 @@ A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\JsonConverter.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\package-info.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\filters\LoggingFilter.java
+A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\filters\MessageFilter.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\models\NotaFiscal.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\service\ServiceClientImpl.java
 A:\Workspace\aem.react.basic-master\core\src\main\java\com\reactapp\core\servlets\SimpleServlet.java

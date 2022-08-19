@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.reactapp.core.service.RelatorioServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.reactapp.core.service.RelatorioService"/>
+  </service>
+  <reference name="NDao" interface="com.reactapp.core.dao.NotaDao" field="NDao"/>
+  <reference name="PDao" interface="com.reactapp.core.dao.ProdutoDao" field="PDao"/>
+  <implementation class="com.reactapp.core.service.RelatorioServiceImpl"/>
+</scr:component>

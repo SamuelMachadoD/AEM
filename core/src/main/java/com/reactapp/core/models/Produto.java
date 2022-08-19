@@ -21,18 +21,5 @@ public class Produto {
     public String getNome() {return nome;}
     public String getCategoria() {return categoria;}
     public float getPreco() {return preco;}
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public void setPreco(float preco) {
-        this.preco = preco;
-    }
-
     public int getId() { return id;}
 }
